@@ -3,11 +3,20 @@ Implement lazy loading for images simply across a website utilizing jQuery. Lazy
 
 #Examples
 
-Shopify: <img src="{{ 'placeholder.jpg' | img_url }}" class="lazy-img" data-src="{{ 'actual-image' | img_url }}"/>
+###Shopify
+```
+<img src="{{ 'placeholder.jpg' | img_url }}" class="lazy-img" data-src="{{ 'actual-image' | img_url }}"/>
+```
 
-Wordpress: <img src="<?= get_template_directory() . '<path to placeholder image>' ?>" class="lazy-img" data-src="<?= $actual_img ?>"/>
+###Wordpress 
+```
+<img src="<?= get_template_directory() . '<path to placeholder image>' ?>" class="lazy-img" data-src="<?= $actual_img ?>"/>
+```
 
-CSS Background: <div class="lazy-bg" data-src="<?= get_template_directory() . '<path to placeholder image>' ?>"></div>
+###CSS Background 
+```
+<div class="lazy-bg" data-src="<?= get_template_directory() . '<path to placeholder image>' ?>"></div>
+```
 
 # Todos
 1. remove the unecessary jQuery dependency
